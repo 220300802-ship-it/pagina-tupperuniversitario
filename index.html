@@ -1,106 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>NovaTech Servicios</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f4f4;
-        }
-        header {
-            background: #0a2540;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background: #133b5c;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 40px;
-            text-align: center;
-        }
-        .card {
-            background: white;
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            background: #0a2540;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-        button {
-            background: #0a2540;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TupperUniversitario</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#0b0f1a;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    background:#000;
+}
+
+header h1{
+    color:#4da6ff;
+}
+
+nav a{
+    margin:0 10px;
+    text-decoration:none;
+    color:white;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(120deg,#000,#003366);
+}
+
+.hero h2{
+    font-size:40px;
+}
+
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#111827;
+    padding:20px;
+    border-radius:10px;
+    width:300px;
+}
+
+.price{
+    font-size:30px;
+    color:#4da6ff;
+}
+
+button{
+    background:#4da6ff;
+    border:none;
+    padding:10px 20px;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>NovaTech Servicios</h1>
-    <p>Soluciones tecnológicas a tu alcance</p>
+    <h1>TupperUniversitario</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#precios">Precios</a>
+        <a href="#calidad">Calidad</a>
+        <a href="#embajadores">Embajadores</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#contacto">Contacto</a>
-</nav>
-
-<section id="inicio">
-    <h2>Bienvenido</h2>
-    <p>Ofrecemos soporte técnico, mantenimiento y soluciones digitales para tu hogar o negocio.</p>
+<section class="hero" id="inicio">
+    <h2>Comida inteligente para estudiantes</h2>
+    <p>Rápido, económico, saludable y flexible</p>
 </section>
 
-<section id="servicios">
+<section class="section">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos TupperUniversitario, un servicio de suscripción semanal diseñado para estudiantes que buscan comer bien sin gastar de más.</p>
+</section>
+
+<section class="section" id="servicios">
     <h2>Servicios</h2>
-
-    <div class="card">
-        <h3>Reparación de computadoras</h3>
-        <p>Diagnóstico y solución de fallas en laptops y PCs.</p>
+    <div class="cards">
+        <div class="card">
+            <h3>Plan semanal</h3>
+            <p>Recibe tus comidas listas toda la semana.</p>
+        </div>
+        <div class="card">
+            <h3>Menú variado</h3>
+            <p>Diferentes opciones cada semana.</p>
+        </div>
+        <div class="card">
+            <h3>Flexible</h3>
+            <p>Pausa o cambia tu plan cuando quieras.</p>
+        </div>
     </div>
-
-    <div class="card">
-        <h3>Instalación de software</h3>
-        <p>Programas, sistemas operativos y optimización.</p>
-    </div>
-
-    <div class="card">
-        <h3>Soporte a domicilio</h3>
-        <p>Atención rápida y profesional en tu casa o negocio.</p>
-    </div>
-
 </section>
 
-<section id="contacto">
+<section class="section" id="precios">
+    <h2>Planes</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>Económico</h3>
+            <p class="price">$499 / semana</p>
+            <p>5 comidas básicas</p>
+            <button>Elegir</button>
+        </div>
+
+        <div class="card">
+            <h3>Estándar</h3>
+            <p class="price">$699 / semana</p>
+            <p>7 comidas balanceadas</p>
+            <button>Elegir</button>
+        </div>
+
+        <div class="card">
+            <h3>Premium</h3>
+            <p class="price">$899 / semana</p>
+            <p>10 comidas + snacks saludables</p>
+            <button>Elegir</button>
+        </div>
+
+    </div>
+
+    <br>
+    <p><b>Descuentos:</b></p>
+    <p>✔ 10% por pago mensual anticipado</p>
+    <p>✔ 15% por cada referido</p>
+</section>
+
+<section class="section" id="calidad">
+    <h2>Sistema de Calidad</h2>
+    <p>Utilizamos ingredientes frescos, control nutricional y procesos higiénicos certificados.</p>
+</section>
+
+<section class="section" id="embajadores">
+    <h2>Programa de Embajadores</h2>
+    <p>Gana dinero recomendando TupperUniversitario en tu universidad.</p>
+    <p>✔ Comisiones por cada cliente</p>
+    <p>✔ Beneficios exclusivos</p>
+    <button>Quiero ser embajador</button>
+</section>
+
+<section class="section" id="contacto">
     <h2>Contacto</h2>
-    <p>Tel: 998-000-0000</p>
-    <p>Email: contacto@novatech.com</p>
-    <button onclick="alert('Gracias por contactarnos')">Enviar mensaje</button>
+    <p>Email: contacto@tupperuniversitario.com</p>
+    <p>WhatsApp: 999 999 9999</p>
 </section>
 
 <footer>
-    <p>© 2026 NovaTech Servicios</p>
+    <p>© 2026 TupperUniversitario</p>
 </footer>
 
 </body>
